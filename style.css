@@ -151,8 +151,8 @@ div.desc {
 div.front{
   width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-bottom: 20px;
   align: center;
   
