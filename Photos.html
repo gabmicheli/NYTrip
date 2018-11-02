@@ -66,8 +66,22 @@
 <div class="clearfix"></div>
 
 <div style="padding:6px;">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-  <a href="#top"><button class="button"> Go to top</button></a>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 
 
