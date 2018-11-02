@@ -15,6 +15,14 @@
     <a href="home.html"> <button class="button"> Home </button> </a>
     <a href="Photos.html"> <button class="button" > Photos </button></a>
     <a href="Videos.html"><button class="button"> Videos </button></a>
+    <a href="thankyou.html"> <button class="button"> Thank You </button></a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Thank You</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Teachers</a>
+        <a href="#about">Students</a>
+      </div>
+     </div>
   </div>
   </ul>
   </div>
@@ -33,7 +41,8 @@
   
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<script>
+
+
 
 window.onscroll = function() {scrollFunction()};
 
@@ -47,6 +56,27 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+  
+  <script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 </script>
 
