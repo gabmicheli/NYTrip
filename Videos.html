@@ -2,71 +2,172 @@
 
 <html>
 
+
+
 <head>
+
   <link
+
   rel="stylesheet"
+
   href="style.css">
+
   
+
   <div class="hero-image">
+
     <ul>
+
        <a href="http://latinpcs.org/support/">
+
          <img src= "latinfull.png"> </img>
+
        </a>
+
        <div class="btn-group">
+
           <a href="home.html"> <button class="button"> Home </button> </a>
+
           <a href="Photos.html"> <button class="button" > Photos </button></a>
+
           <a href="Videos.html"><button class="button"> Videos </button></a>
+
       </div>
+
     </ul>
+
   </div>
+
   
+
+
 
 </head>
 
 
+
+
+
 <body>
+
   <h1 class="center"> Interviews from Students throughout the Trip</h1>
+
    <h1 class="center"> Ellery Grimm </h1> 
+
   <!-- Ellery+ -->
+
   <video width="400" height= "400" class="center" controls>
+
     <source src="IMG_0562.mov" type="video/mp4">
+
     <source src="IMG_0562.ogv" type="video/ogg">
+
     <source src="IMG_0562.webm" type="video/webm">
+
   </video>
+
+
 
 <!-- Harry -->
+
 <h1> Harry Hirsch </h1>
+
   <video width="400" height= "400" class="center" controls>
+
     <source src="IMG_0596.mov" type="video/mp4">
+
     <source src="IMG_0596.ogv" type="video/ogg">
+
     <source src="IMG_0596.webm" type="video/webm">
+
   </video>
+
   <h1> Ava Tiller </h1>
+
   <!-- Ava T -->
+
    <video width="400" height= "400" class="center" controls>
+
     <source src="IMG_0571.mov" type="video/mp4">
+
     <source src="IMG_0571.ogv" type="video/ogg">
+
     <source src="IMG_0571.webm" type="video/webm">
+
   </video>
+
   <h1> Trinity Rich and Ms. Jost</h1>
+
   <!-- Trin + Ms. Jost -->
+
     <video width="400" height= "400" class="center" controls>
+
     <source src="IMG_1816.mov" type="video/mp4">
+
     <source src="IMG_1816.ogv" type="video/ogg">
+
     <source src="IMG_1816.webm" type="video/webm">
+
   </video>
+
   <h1> Ava Evans </h1>
+
 <!-- Ava E -->
+
   <video width="400" height= "400" class="center" controls>
+
     <source src="IMG_0563.mov" type="video/mp4">
+
     <source src="IMG_0563.ogv" type="video/ogg">
+
     <source src="IMG_0563.webm" type="video/webm">
+
   </video>
 
   
-   <a href="#top"><button class="button"> Go to top</button></a>
+
+<script>
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+window.onscroll = function() {scrollFunction()};
+
+
+
+function scrollFunction() {
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+        document.getElementById("myBtn").style.display = "block";
+
+    } else {
+
+        document.getElementById("myBtn").style.display = "none";
+
+    }
+
+}
+
+
+
+// When the user clicks on the button, scroll to the top of the document
+
+function topFunction() {
+
+    document.body.scrollTop = 0;
+
+    document.documentElement.scrollTop = 0;
+
+}
+
+</script>
+
   
+
 </body>
+
+
+
 
 
 </html>
